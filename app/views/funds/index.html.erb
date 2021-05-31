@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Funds</h1>
-<h2>Total Funds: <%= @savings.nil? ? '0' : @savings.sum(:amount) %></h2>
+<h2>Total Funds: <%= @funds.nil? ? '0' : @funds.sum(:amount) %></h2>
 
 <table>
   <thead>
