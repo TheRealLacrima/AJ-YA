@@ -10,6 +10,8 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+    1. Install Devise.
+        - "rails g devise:install"
 
 * Database creation
 
