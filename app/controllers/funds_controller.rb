@@ -4,6 +4,8 @@ class FundsController < ApplicationController
   # Set date to date entries
   def set_date_entry
     Fund.update_date_entry
+
+    redirect_to funds_path
   end
 
   # GET /funds or /funds.json
