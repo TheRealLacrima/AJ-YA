@@ -17,7 +17,7 @@
   <tbody>
     <% @funds.each do |fund| %>
       <tr>
-        <td><%= fund.date_entry.strftime('%B %d, %Y') %> </td>
+        <td><%= convert_datestamp(fund.date_entry) %> </td>
         <td>| <%= fund.amount %> </td>
         <td>| <%= fund.description %> </td>
         <td>| <%= fund.user %></td>
