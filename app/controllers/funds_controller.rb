@@ -1,6 +1,7 @@
 class FundsController < ApplicationController
   before_action :set_fund, only: %i[ show edit update destroy ]
 
+  # Set date to date entries
   def set_date_entry
     Fund.update_date_entry
   end
