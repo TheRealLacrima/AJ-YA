@@ -1,6 +1,10 @@
 class FundsController < ApplicationController
   before_action :set_fund, only: %i[ show edit update destroy ]
 
+  def set_date_entry
+    Fund.update_date_entry
+  end
+
   # GET /funds or /funds.json
   def index
     @funds = Fund.all

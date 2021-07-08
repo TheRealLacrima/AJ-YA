@@ -4,6 +4,9 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+    <%= f.label 'Date Entry:' %>
+    <%= f.date_field :date_entry %>
+    
     <%= f.input :amount %>
     <%= f.input :description %>
     <%= f.input :user %>
